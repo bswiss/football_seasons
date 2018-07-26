@@ -1,0 +1,72 @@
+.intro {
+    height: 500px;
+    margin-top: 0px;
+}
+
+.intro h1 {
+    text-align: center;
+    padding-top: 210px;
+    color: white;
+    font-size: 52pt;
+    animation: title 1.2s linear 0s 1 normal forwards;
+}
+
+.intro h3 {
+    text-align: center;
+    animation: subtitle 1.2s linear 1.2s 1 normal forwards;
+    color: white;
+}
+
+.bgimg-1 { 
+    /* The image used */
+    background-image: url("https://www.ewingirrigation.com/news/wp-content/uploads/2016/10/shutterstock_184924997-576x350.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/*media query for small screens*/
+@media (max-width: 480px) {
+    .intro {
+        height: 200px;
+    }
+
+    .intro h1 {
+        padding-top: 50px;
+        font-size: 36pt;
+    }
+
+    .intro h3 {
+        font-size: 16pt;
+    }
+}
+
+/* keyframe animations for title block */
+@keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
