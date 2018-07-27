@@ -38,34 +38,49 @@
         <div class="bgimg-1">
             <div class="intro">
                 <h1><strong>College Football</strong></h1>
-                <h3>Catch the Excitement!</h3>
+                <h3>The Heimans!</h3>
             </div> <!-- Row -->
         </div>
     </div>
     <div class="container"> 
         <div class="row">
-            <div class="col-md-6 col-md-offset-3" > <!--links -->
-                <a href="nc.html" class="btn btn-primary btn-lg" >National Champs</a>
-            </div>
-        </div>
-        <div class="row">
-                <div class="col-md-6 col-md-offset-3" > <!--links -->
-                    <a href="hei.html" class="btn btn-primary btn-lg" >Heisman Winners</a>
+            <div class="col-md-3"> <!--search panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><strong>Filter Search</strong></h4>
+                    </div> 
+                    <form>
+                    <div class="panel-body"> <!-- search boxes -->
+                        <div class="form-group"> 
+                            <label class="control-label" for="Enter Year">Year</label>
+                            <input class="form-control" id="yearInput" type="text" placeholder="2017">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Enter Player">Heisman Winner</label>
+                            <input class="form-control" id="playerInput" type="text" placeholder="Baker Mayfield">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Enter School">School</label>
+                            <input class="form-control" id="schoolInput" type="text" placeholder="Oklahoma">
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-primary">Search</button> <!-- search button -->
+                    </div> <!-- panel-body -->
+                    </form>
+                </div> <!-- panel -->
+            </div> <!-- column -->
+            <div class="col-md-9" style="overflow-x:auto;"> <!-- College Football Table -->
+            <table class="table table-striped table-responsive">
+                <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Heisman Winner</th>
+                    <th>School</th>
+                </tr>
+                </thead>
+                <tbody> <!-- empty table body -->
+                </tbody>
+                </table>
                 </div>
-            </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3" > <!--links -->
-                <a href="pass.html" class="btn btn-primary btn-lg" >Top Passers</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3" > <!--links -->
-                <a href="rec.html" class="btn btn-primary btn-lg" >Top Receivers</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3" > <!--links -->
-                <a href="rush.html" class="btn btn-primary btn-lg" >Top Rushers</a>
             </div>
         </div>
     </div>
@@ -77,6 +92,6 @@
         </div>
     </footer>
 </body>
-<!-- <script src="static\js\nc_data.js"></script>
-<script src="static\js\nc_app.js"></script> -->
+<script src="static\js\hei_data.js"></script>
+<script src="static\js\hei_app.js"></script>
 </html>

@@ -34,7 +34,33 @@
     margin-top: 20px;
 }
 
+.btn-lg {
+    width: 400px;
+    margin-left: 10rem;
+}
+
 /*media query for small screens*/
+@media (max-width: 1200px) {
+    .btn-lg {
+        width: 400px;
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .btn-lg {
+        width: 400px;
+        margin-left: 16rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn-lg {
+        width: 300px;
+        margin-left: 8rem;
+    }
+}
+
 @media (max-width: 480px) {
     .intro {
         height: 200px;
@@ -47,6 +73,11 @@
 
     .intro h3 {
         font-size: 16pt;
+    }
+
+    .btn-lg {
+        width: 200px;
+        margin-left: 7rem;
     }
 }
 
